@@ -3,9 +3,9 @@ lista = []
 
 limite = 1
 
-while limit <= 100:
+while limite <= 100:
     lista.append(limite)
-    limit=limit+1
+    limite=limite+1
 
 print(lista)
 
