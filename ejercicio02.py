@@ -1,11 +1,15 @@
-meses = ["e","f","m","a"]
+meses = ["enero","febrero","marzo","abril","mayo","junio","julio","agosto","setiembre","octubre","noviembre","diciembre"]
 
-bandera=1
-while bandera == 1:
-    mes = input('Ingresa un mes')
-    if mes > 12
-    print('Error')
-    else
-    print(meses[mes-1])
-    if mes = 0
-    print(meses[0+1])
+bandera = True
+
+while bandera == True:
+    mes = int(input('Ingresa un numero de mes del 1 al 12: '))
+    if mes > 12:
+        print('Error. Tipea un numero correcto')
+    else:
+        if mes == 0:
+            print('Error! No es un numero de mes')
+            bandera = False
+        else:
+            mesreal = mes - 1
+            print(meses[mesreal])
