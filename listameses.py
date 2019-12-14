@@ -1,14 +1,12 @@
 
 meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Setiembre','Ocutubre','Noviembre','Diciembre']
 print (meses)
-mes = 0
 flag = 1
 
 while flag == 1:
-    mes = input('ingresa un numero que represente mes del anio')
-    if (mes>12):
-        print ('Dato errado')
-        
+    mes = int (input('ingresa un numero que represente mes del anio'))
+    if (mes > 12):
+        print ('Dato errado, ingrese datos del 1 - 12')
     else:
         if (mes == 0): 
             flag = 99
