@@ -39,7 +39,14 @@ print(tablademult)
 listaNumeros = []
 
 while True:
-    numero = int(input("Ingresa un numero: "))
+    numero = int(input("Ingresa un numero para enlistarlo, ingresa 0 para terminar: "))
+    if(numero==0):
+        break
+    else:
+        listaNumeros.append(numero)
 
-
+listaNumeros.sort()
+print(listaNumeros)
+listaNumeros.sort(reverse=True)
+print(listaNumeros)
 
