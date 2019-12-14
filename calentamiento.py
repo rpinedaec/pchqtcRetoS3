@@ -91,7 +91,7 @@ print(lisNew)"""
 
 ##ejercicio 8 ::::
 #Crea una lista con números, pide un numero por teclado e indica cuantas veces se repite.
-lisNum=[1,2,3,4,5,6,7,8,9,11,1,2,23,45,3,6,78,34,2,6,3,4,5,8,6,9,0,23,21,14,16,23,18,29,21,23,22,24,3] 
+"""lisNum=[1,2,3,4,5,6,7,8,9,11,1,2,23,45,3,6,78,34,2,6,3,4,5,8,6,9,0,23,21,14,16,23,18,29,21,23,22,24,3] 
 
 num=int(input('ingrese algun numero: \n'))
 contador=0
@@ -99,7 +99,20 @@ contador=0
 for i in lisNum:
     if i==num:
         contador+=1
-print("el numero "+str(num)+" se repite "+ str(contador)+ " veces")
+print("el numero "+str(num)+" se repite "+ str(contador)+ " veces")"""
+
+
+##ejercicio 9 ::::
+#Crea una lista con números e indica el numero con mayor valor y el que menor tenga.
+lisNum=[1,2,3,4,5,6,7,8,9,11,1,2,23,45,3,6,78,34,2,6,3,4,5,8,6,9,0,23,21,14,16,23,18,29,21,23,22,24,3,43,65,45,87,67,90,100]
+
+mayor=sorted(lisNum,reverse=True)
+menor=sorted(lisNum)
+print(mayor[0])
+print(menor[0])
+
+
+
 
 
 
