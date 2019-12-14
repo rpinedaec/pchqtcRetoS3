@@ -50,7 +50,7 @@ print(menor)"""
 
 ##Lo mismo que el anterior pero ordenando de mayor a menor
 
-band=1
+"""band=1
 lista=[]
 
 while(band==1):
@@ -62,4 +62,19 @@ while(band==1):
         band=0
 
 mayor=sorted(lista,reverse=True)
-print(mayor)
+print(mayor)"""
+
+##ejercicio 6 ::::
+# Pide una cadena por teclado, mete los caracteres en una lista sin espacios.
+
+cadena=input("ingrese una cadena: \n")
+lis=[]
+
+for i in range(len(cadena)):
+    lis.append(cadena[i])
+
+print(lis)
+
+
+
+
