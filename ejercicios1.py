@@ -50,3 +50,19 @@ print(listaNumeros)
 listaNumeros.sort(reverse=True)
 print(listaNumeros)
 
+# Ingresar en una lista sin espacios
+
+cadena = input("Ingrese una cadena de texto: ")
+cadenaSinEspacios = []
+
+for i in range(len(cadena)):
+    if(cadena[i]==' '):
+        continue
+    else:
+        cadenaSinEspacios.append(cadena[i])
+
+print(cadenaSinEspacios)
+    
+
+
+
