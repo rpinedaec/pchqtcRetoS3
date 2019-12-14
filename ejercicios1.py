@@ -1,68 +1,91 @@
-# paises = []
 
-# while (len(paises)<6):
-#     pais = input("Ingrese un pais: ")
-#     paises.append(pais)
+def ejercicio1():
+    unoAlCien = []
 
-# valor = input("Ingrese el valor a contar: ")
-# print(paises)
-# print(paises.count(valor))
+    for i in range(100):
+        unoAlCien.append(i+1)
 
-# Uno al cien:
-unoalcien = []
+    print(unoAlCien)
 
-for i in range(100):
-    unoalcien.append(i+1)
+def convertirNumAMeses():
+    meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
+    mesInput = int(input("Ingrese un numero del 1 al 12 para ver que mes es: "))
+    print(meses[mesInput-1])
 
-print(unoalcien)
+def tablaDeMultip():
+    base = int(input("Ingresa un numero para devolver su tabla de multiplicar: "))
+    tablaDeMultiplicar = []
 
-# Meses
+    for i in range(10):
+        tablaDeMultiplicar.append(base*(i+1))
 
-meses = ['enero','febrero','marzo','abril','mayo','junio','julio','agosto','septiembre','octubre','noviembre','diciembre']
-mes = int(input("Ingrese un numero del 1 al 12 para ver que mes es: "))
-print(meses[mes-1])
+    print(tablaDeMultiplicar)
 
+def enlistarNumOrdenados():
+    numeros = []
 
-# Tabla de multiplicar
+    while True:
+        numero = int(input("Ingresa un numero para enlistarlo, ingresa 0 para terminar: "))
+        if(numero==0):
+            break
+        else:
+            numeros.append(numero)
 
-base = int(input("Ingresa un numero para devolver su tabla de multiplicar: "))
-tablademult = []
+    numeros.sort()
+    print(numeros)
+    numeros.sort(reverse=True)
+    print(numeros)
 
+def sinEspacios():
 
-for i in range(10):
-    tablademult.append(base*(i+1))
+    cadena = input("Ingrese una cadena de texto para eliminar los espacios: ")
+    cadenaSinEspacios = []
 
-print(tablademult)
+    for i in range(len(cadena)):
+        if(cadena[i]==' '):
+            continue
+        else:
+            cadenaSinEspacios.append(cadena[i])
 
-# Pedir numeros
-
-listaNumeros = []
-
-while True:
-    numero = int(input("Ingresa un numero para enlistarlo, ingresa 0 para terminar: "))
-    if(numero==0):
-        break
-    else:
-        listaNumeros.append(numero)
-
-listaNumeros.sort()
-print(listaNumeros)
-listaNumeros.sort(reverse=True)
-print(listaNumeros)
-
-# Ingresar en una lista sin espacios
-
-cadena = input("Ingrese una cadena de texto: ")
-cadenaSinEspacios = []
-
-for i in range(len(cadena)):
-    if(cadena[i]==' '):
-        continue
-    else:
-        cadenaSinEspacios.append(cadena[i])
-
-print(cadenaSinEspacios)
+    print(cadenaSinEspacios)
     
+def repetidos():
+    cadena = input("Ingrese una cadena de texto para eliminar las repeticiones: ")
+    cadenaSinRepetidos = []
 
+    for i in range(len(cadena)):
+        bandera = 1
+        for j in range(len(cadenaSinRepetidos)):
+            if(cadena[i]==cadenaSinRepetidos[j]):
+                bandera = 0
+                break
+        if(bandera==1):
+            cadenaSinRepetidos.append(cadena[i])
 
+    print(cadenaSinRepetidos)
 
+def listaRepetidasMaxMin():
+    numeros = [1,2,3,4,5,6,1,3,5,1,6,2,2,1,5]
+    numero = int(input("Ingresa un numero para saber cuantas veces se repiten: "))
+    cantRepetidas = 0
+    for i in range(len(numeros)):
+        if(numeros[i]==numero):
+            cantRepetidas += 1
+    print(numeros)
+    print("La cantidad de repetidas son:", cantRepetidas)
+    print("El maximo valor es",max(numeros),". El minimo valor es",min(numeros))
+
+def diccionarioContactos():
+    contactos = {}
+    while True:
+        usuario = input("Ingrese nombre de usuario: ")
+        telefono = input("Ingrese numero de telefono: ")
+        contactos[usuario] = telefono
+        continuar = input("Ingresar otro contacto? s/n: ")
+        if(continuar == "n"):
+            break
+    print(contactos)
+
+diccionarioContactos()
+
+# ejercicio= input("Ingrese el ejercicio que quiere ejecutar:\n1:Imprimir del uno al cien, \n2: Convertir numeros a meses, \n3: Tabla de Multiplicar \n4: Enlistar numeros ordenados \n5: Eliminar espacios\n6: Eliminar repetidas\n0: Actual")
