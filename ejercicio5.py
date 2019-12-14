@@ -7,4 +7,5 @@ while flag == True:
         flag = False  
     else:
         lista.append(numero)
+    lista.sort(reverse=False) #ordena la lista
 print(lista)
