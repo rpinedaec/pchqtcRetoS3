@@ -11,9 +11,9 @@ while flag == 1:
         
     else:
         if (mes == 0): 
-        flag = 99
-    
-        print(meses(mes-1))
+            flag = 99
+print(meses(mes-1))
+        
     
     
  
