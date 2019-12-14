@@ -47,3 +47,19 @@ while(band==1):
 
 menor=sorted(lista)
 print(menor)"""
+
+##Lo mismo que el anterior pero ordenando de mayor a menor
+
+band=1
+lista=[]
+
+while(band==1):
+    num=int(input('ingrese numeros: \n'))
+
+    if (num!=0):        
+        lista.append(num)
+    else:
+        band=0
+
+mayor=sorted(lista,reverse=True)
+print(mayor)
