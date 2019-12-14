@@ -1,17 +1,17 @@
 ##Mete los valores del 1 al 100 en una lista.
-#num=[]
-#for i in range(100):
-#    num.append(i+1)
+"""num=[]
+for i in range(100):
+    num.append(i+1)
 
-#print(num)
+print(num)"""
 
 ##Crea una lista con los meses del año, pide números al usuario, si el numero esta entre 1 
 # y la longitud máxima de la lista, muestra el contenido de esa posición sino muestra un mensaje de error.
 #  El programa termina cuando el usuario introduce un cero
-meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','setiembre','octubre','noviembre','diciembre']
+"""meses=['enero','febrero','marzo','abril','mayo','junio','julio','agosto','setiembre','octubre','noviembre','diciembre']
 
 mes=int(input('ingrese el numero de un mes:\n'))
-#print(len(meses))
+
 
 if mes!=0:
     if(mes>0 and mes<=len(meses)):
@@ -19,6 +19,16 @@ if mes!=0:
     else:
         print('error, vuelva intentarlo!!')
 else:
-    print("fin del programa")
+    print("fin del programa")"""
+
+##Pide un numero por teclado y guarda en una lista su tabla de multiplicar hasta el 10.
+#  Por ejemplo, si pide el 5 la lista tendrá: 5,10,15,20,25,30,35,40,45,50
+"""num1=input('ingrese un numero: \n')
+mult=[]
+
+for i in range(10):
+    mult.append(int(num1)*(i+1))
+
+print(mult)"""
 
 
