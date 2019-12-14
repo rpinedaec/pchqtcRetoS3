@@ -1,12 +1,15 @@
-valores=[]
+Meses=['Enero',"Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"]
 
+numMes=int(input('Ingrese nro del mes: ')) 
 
-limite = 100
-numer=0
-
-while limite > 0:
-    numer=numer+1
-    valores.append(numer)
-    limite=limite - 1
+if  numMes ==0:
+    print("Programa terminado")
+elif  numMes < 1 and numMes > 12:
+    print("ERROR")
+else:
     
-print(valores)
+    
+
+
+
+    print(Meses[numMes +1])
