@@ -67,13 +67,31 @@ print(mayor)"""
 ##ejercicio 6 ::::
 # Pide una cadena por teclado, mete los caracteres en una lista sin espacios.
 
-cadena=input("ingrese una cadena: \n")
+"""cadena=input("ingrese una cadena: \n")
 lis=[]
 
 for i in range(len(cadena)):
     lis.append(cadena[i])
 
+print(lis)"""
+
+##ejercicio 7 ::::
+#Pide una cadena por teclado, mete los caracteres en una lista sin repetir caracteres.
+cadena=input("ingrese una cadena: \n")
+lis=[]
+for i in range(len(cadena)):
+    lis.append(cadena[i])
+
 print(lis)
+lisNew=[]
+for i in lis:
+    if i not in lisNew:
+        lisNew.append(i)
+print(lisNew)
+
+
+
+
 
 
 
