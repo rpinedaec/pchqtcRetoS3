@@ -1,4 +1,6 @@
 
+
+
 lista = []
 
 numero = int(input('Ingresa un numero: '))
@@ -10,4 +12,13 @@ while limite <=numero*10:
     limite=limite+numero
 print(lista)
 
+# metodo 2
 
+# lista = []
+
+# numero = int(input('Ingresa un numero: '))
+# for a in range(1, 11):
+    #resultado = numero*a
+    #lista.append(resultado)
+
+# print(lista)
