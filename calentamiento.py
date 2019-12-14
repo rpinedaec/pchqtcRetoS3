@@ -31,4 +31,19 @@ for i in range(10):
 
 print(mult)"""
 
+##Pide números y mételos en una lista, cuando el usuario meta un 0 ya dejaremos de insertar. 
+# Por último, muestra los números ordenados de menor a mayor.
 
+"""band=1
+lista=[]
+
+while(band==1):
+    num=int(input('ingrese numeros: \n'))
+
+    if (num!=0):        
+        lista.append(num)
+    else:
+        band=0
+
+menor=sorted(lista)
+print(menor)"""
