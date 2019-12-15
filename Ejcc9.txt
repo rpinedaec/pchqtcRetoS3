@@ -1,0 +1,17 @@
+import random
+
+l_num=[]
+
+for i in range(0,10):
+    l_num.append(random.randint(0, 20))
+
+ord=sorted(l_num)
+
+_min=ord[0]
+_max=ord[len(ord)-1]
+
+print("mayor: "+str(_max))
+print("menor: "+str(_min))
+
+print("En la lista: ")
+print(l_num)

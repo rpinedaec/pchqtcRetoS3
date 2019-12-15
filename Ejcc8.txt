@@ -1,0 +1,18 @@
+import random
+
+l_num=[]
+
+for i in range(0,10):
+    l_num.append(random.randint(0, 10))
+
+numero = int(input("Ingrese un numero: "))
+
+cnt=0
+
+for h in l_num:
+    if h==numero:
+        cnt=cnt+1
+print("El numero se repite ")
+print(str(cnt)+" veces")
+print("En la lista: ")
+print(l_num)

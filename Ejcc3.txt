@@ -1,0 +1,7 @@
+numero = int(input("Escriba un número positivo: "))
+resul=[]
+h=1
+while h<=10 :
+    resul.append(h*numero)
+    h=h+1
+print(resul)
