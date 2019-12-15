@@ -1,5 +1,6 @@
+from random import randrange
 
-def ejercicio1():
+def enlistarDeUnoAlCien():
     unoAlCien = []
 
     for i in range(100):
@@ -65,7 +66,12 @@ def repetidos():
     print(cadenaSinRepetidos)
 
 def listaRepetidasMaxMin():
-    numeros = [1,2,3,4,5,6,1,3,5,1,6,2,2,1,5]
+
+    numeros = []
+
+    for i in range(10):
+        numeros.append(randrange(10))
+
     numero = int(input("Ingresa un numero para saber cuantas veces se repiten: "))
     cantRepetidas = 0
     for i in range(len(numeros)):
@@ -86,6 +92,63 @@ def diccionarioContactos():
             break
     print(contactos)
 
-diccionarioContactos()
+def main():
 
-# ejercicio= input("Ingrese el ejercicio que quiere ejecutar:\n1:Imprimir del uno al cien, \n2: Convertir numeros a meses, \n3: Tabla de Multiplicar \n4: Enlistar numeros ordenados \n5: Eliminar espacios\n6: Eliminar repetidas\n0: Actual")
+    def convNumerosAFunc(argument):
+        opciones = {
+            1 : enlistarDeUnoAlCien,
+            2 : convertirNumAMeses,
+            3 : tablaDeMultip,
+            4 : enlistarNumOrdenados,
+            5 : sinEspacios,
+            6 : repetidos,
+            7 : listaRepetidasMaxMin,
+            8 : diccionarioContactos
+        }
+
+        func = opciones.get(argument, lambda: "Opcion invalida")
+        func()
+
+    def ejecutaMenuRegresar():
+        leyenda = [
+            "1. Regresar al menu principal",
+            "2. Cerrar"
+        ]
+
+        print("\n MENU REGRESAR")
+
+        for i in range(len(leyenda)):
+            print(leyenda[i])
+
+        opcion = int(input("Opcion: "))
+
+        if(opcion==1):
+            ejecutaMenuPrinc()
+        else:
+            exit()
+
+    def ejecutaMenuPrinc():
+        leyenda = [
+            "1. Enlistar del 1 al 100",
+            "2. Convertir Numero a Meses",
+            "3. Calcular la Tabla de Multiplicar",
+            "4. Enlistar Numeros Ordenados",
+            "5. Eliminar Espacios en Blanco",
+            "6. Eliminar Caracteres Repetidos",
+            "7. Ver Repetidas, Numero Maximo y Minimo de una Lista Aleatoria",
+            "8. Ingresar Contactos al Diccionario"
+        ]
+
+        print("\n MENU PRINCIPAL \n Ingrese el numero de la funcion a ejecutar: ")
+
+        for i in range(len(leyenda)):
+            print(leyenda[i])
+
+        opcion = int(input("Opcion: "))
+        print("\n")
+        convNumerosAFunc(opcion)
+        ejecutaMenuRegresar()
+        
+    ejecutaMenuPrinc()
+
+main()
