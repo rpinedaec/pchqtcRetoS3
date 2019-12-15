@@ -1,0 +1,9 @@
+meses=['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre','Octubre','Noviembre','Diciembre']
+numero = 1
+while numero>0 :
+    numero = int(input("Escriba un número positivo: "))
+    if numero<=12 :
+        print(meses[numero-1])
+    else:
+        print("Fuera de rango")
+print(len(meses))

@@ -1,0 +1,25 @@
+users=[]
+passw=[]
+
+flag=1
+ini=0
+while flag==1:
+    usr=str(input("Ingrese un nombre\t"))
+    psw=str(input("Ingrese una contraseña\t"))
+
+    
+
+    if ini>0:
+        if usr in users:
+            print("Usuario ya existe")
+        else:
+            users.append(usr)
+            passw.append(passw)
+
+    mas=str(input("Desea agregar mas contactos: Y/N\t"))
+    if mas=='N':
+        flag=0
+    ini=1
+
+print(users)
+print(passw)

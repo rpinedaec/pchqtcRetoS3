@@ -1,0 +1,12 @@
+resul=[]
+h=1
+while h==1 :
+    numero = int(input("Escriba un número positivo: "))  
+    if numero==0 :
+        h=0
+    else:
+        resul.append(numero)
+
+ord=sorted(resul)
+
+print(ord)
